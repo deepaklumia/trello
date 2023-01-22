@@ -1,5 +1,168 @@
-main {
+/* main {
   text-align: center;
   vertical-align: center;
   line-height: 100vh
+} */
+body{
+  margin:0px;
+  padding:0px;
+}
+.header{
+  background-color: #025ae8;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  font-size: 1.2em;
+  margin: 0px;
+  padding: 10px;
+  display:flex;
+  align-items: center;
+  color: #fff;
+}
+ul{
+  display:flex;
+  list-style:none;
+  
+}
+li{
+  margin-right: 20px;
+  text-align:center;
+  font-size:1.2em;
+}
+button{
+  background-color:blue;
+  color:white;
+  text-align:center;
+  font-size:1.2em;
+  border:none;
+  border-radius:10px;
+  padding:5px;
+}
+button:hover{
+  background-color:#1e73c2
+}
+.home{
+  display:flex;
+  padding:20px;
+ flex-wrap:wrap;
+}
+.create-board{
+  background-color: #f2e8e8;
+  padding:20px;
+  height:100px;
+  width:200px;
+  text-align:center;
+  margin:10px;
+  cursor:pointer;
+}
+.create-board p{
+  font-weight: bold;
+  margin-top:35px;
+}
+.board{
+  background-color: #025ae8;
+  padding:20px;
+  height:100px;
+  width:200px;
+  text-align:center;
+  margin:10px;
+  cursor:pointer;
+}
+.model{
+  position:absolute;
+  background-color:rgba(0, 0, 0, 0.5);
+  width:100%;
+  height:100%;
+  top:0px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  display:none;
+}
+.create-model-title{
+  background-color: white;
+  border-radius: 10px;
+  padding:20px;
+  height:200px;
+  width:400px;
+  text-align:center;
+  margin:10px;
+  
+}
+.create-model-title input{
+  display:block;
+  margin:10px auto;
+  padding:10px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.2em;
+  border-color:blue
+ 
+}
+.create-model-title button{
+  display:inline-block;
+  margin:10px;
+  padding:10px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.2em;
+  border-color:blue
+}
+a{
+  text-decoration:none;
+  outline: none;
+  color: #fff;
+}
+.board-list{
+  background-color: #025ae8;
+  display:inline-block;
+}
+.add-list{
+  display:flex;
+  flex-wrap:wrap;
+}
+.list-item{
+  background-color: #025ae8;
+  width:300px;
+  margin:10px;
+  padding:10px;
+}
+.second-model{
+  position:absolute;
+  background-color:rgba(0, 0, 0, 0.5);
+  width:100%;
+  height:100%;
+  top:0px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  display:none;
+}
+.create-second-model-title{
+  background-color: white;
+  border-radius: 10px;
+  padding:20px;
+  height:200px;
+  width:400px;
+  text-align:center;
+  margin:10px;
+  
+}
+.create-second-model-title input{
+  display:block;
+  margin:10px auto;
+  padding:10px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.2em;
+  border-color:blue
+ 
+}
+.create-second-model-title button{
+  display:inline-block;
+  margin:10px;
+  padding:10px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.2em;
+  border-color:blue
 }
