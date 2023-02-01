@@ -115,54 +115,150 @@ a{
 .board-list{
   background-color: #025ae8;
   display:inline-block;
+  height:50px;
+  margin-top:20px;
+  padding-top: 10px;
+  margin-left:10px;
+    padding-right: 80px;
+    padding-left: 80px;
+  text-align:center;
+}
+.board-list #addList{
+  font-size:1rem;
+  font-weight:bold;
 }
 .add-list{
   display:flex;
   flex-wrap:wrap;
 }
 .list-item{
+/*   position:relative; */
   background-color: #025ae8;
   width:300px;
   margin:10px;
   padding:10px;
 }
-.second-model{
-  position:absolute;
-  background-color:rgba(0, 0, 0, 0.5);
-  width:100%;
-  height:100%;
-  top:0px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  display:none;
-}
-.create-second-model-title{
-  background-color: white;
+.list-item p{
+  display:inline-block;
+/*   margin-right:160px; */
+  width:100px;
+  
+  }
+.list-item .delete{
+  display:inline-block;
+  cursor:pointer;
+  position:relative;
+  left:100px;
+  }
+.card-item{
+  background-color:white;
   border-radius: 10px;
-  padding:20px;
-  height:200px;
-  width:400px;
-  text-align:center;
+  padding:1px 10px;
   margin:10px;
+}
+.card-item{
+  display: flex;
+  flex-wrap: wrap;
+  align-item:center;
+  justify-content: space-between;
   
 }
-.create-second-model-title input{
-  display:block;
-  margin:10px auto;
+#delete{
+  cursor:pointer;
+}
+.card-model{
+  background-color: rbga(0,0,0,0.5);
+/*   opacity: 0.5; */
+  position: absolute;
+  height: 100vh;
+  width: 90vh;
+  display: flex;
+ flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  top: 0px;
+  display: none;
+}
+.card-item p{
+  cursor:pointer;
+}
+.all-card button{
+  text-align:center;
+  margin:10px;
+  padding:5px 80px;
+}
+.card-model-item{
+  background-color:#e1dfdf;
+  width:330px;
+  display:flex;
+  flex-direction:column;
+  justify-content:right;
+  margin:15px;
   padding:10px;
-  border-radius: 10px;
-  outline: none;
-  font-size: 1.2em;
-  border-color:blue
+ border-radius: 10px;
+  }
+.card-model-item #title{
+  font-size:2rem;
+  font-weight:bolder;
+}
+.checkList p{
+/*    font-size:1rem;
+  font-weight:bolder; */
+}
+.card-model p{
+  position:relative;
+}
+.card-model .close{
+  right: -250px;
+    top: -47px;
+  cursor:pointer;
+}
+.add-checklist{
+/*   position:absolute; */
+  background-color:rgba(0,0,0,0.5);
+  border-radius:10px;
+  padding:20px;
  
 }
-.create-second-model-title button{
-  display:inline-block;
-  margin:10px;
+.add-checklist input{
+   display:block;
+  margin-bottom:10px;
   padding:10px;
   border-radius: 10px;
   outline: none;
   font-size: 1.2em;
-  border-color:blue
+  border-color:blue;
+}
+.add-checklist h1 {
+  margin-right: 0px;
+}
+span{
+ margin-left:50px;
+  cursor:pointer;
+}
+hr{
+  height:1px;
+  width:100%;
+  
+}
+.checkList p{
+  display:inline-block;
+  width:30px;
+  margin-right:200px;
+   font-size:1rem;
+  font-weight:bolder;
+}
+.checkList .deleteCheckList{
+  display:inline-block;
+}
+.items{
+  background-color:white;
+  text-align:center;
+  padding:10px;
+  margin:10px;
+  display:flex;
+  border-radius:10px;
+}
+.items p{
+  width:10px;
 }
